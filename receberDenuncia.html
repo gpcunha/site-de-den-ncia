@@ -1,0 +1,12 @@
+<?php
+	$assunto = $_POST['tAssunto'];
+	$corpo = "
+		Assunto: ".$assunto = $_POST['tAssunto']."
+		Nome: ".$nome = $_POST['tNome']."
+		Email: ".$email = $_POST['tEmail']."
+		Menssagem: ".$msg = $_POST['tMsg']."
+	";
+	mail('glaucopaivacunha@gmail.com', $assunto, $corpo,'From: denunciamaustratos.com');
+	echo "<h1><center>Enviado com sucesso.</center></h1>";
+header("Location: index.php#form-group");
+?>
